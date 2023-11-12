@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>MY CHECKOUT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h3>How would you like to get your order?</h3>
+
+        <div class="main-form">
+          <div class="form_name to_flex">
+            <div class="l_input">
+              <label for="firstName">First name</label>
+              <input id="firstName" type="text" required />
+            </div>
+
+            <div class="l_input">
+              <label for="lastName">Last name</label>
+              <input id="lastName" type="text" required />
+            </div>
+          </div>
+
+          <div class="form_address l_input">
+            <label for="Street address">Street address</label>
+            <input id="StreetAddress" type="text" required />
+          </div>
+
+          <div class="form_city to_flex">
+            <div class="l_input">
+              <label for="Town/City"> Town/City</label>
+              <input id="TownCity" type="text" required />
+            </div>
+
+            <div class="l_input">
+              <label for="State">State</label>
+              <input id="State" type="text" />
+            </div>
+
+            <div class="l_input">
+              <label for="postcode">Postcode</label>
+              <input id="postCode" type="text" required />
+            </div>
+          </div>
+
+          <div class="form_country l_input">
+            <label for="Country">Country</label>
+            <select name="country" id="country">
+              <option value="NGN">Nigeria</option>
+              <option value="GBP">United Kingdom</option>
+              <option value="USD">United States of America</option>
+              <option value="PRT">Portugal</option>
+              <option value="CAN">Canada</option>
+            </select>
+          </div>
+          <div class="form_email l_input">
+            <label for="Email">Email address</label>
+            <div class="email_input">
+              <input type="email" name="email" id="email" />
+            </div>
+          </div>
+          <div class="l_input">
+            <button type="button">Continue to payment</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-image">
+        <img src="images/002.jpg" alt="The Mademosille" />
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
