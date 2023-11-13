@@ -87,6 +87,14 @@ background: #524f4f;
   width: 100%;
 }
 
+p{
+  width: 300px;
+  padding: 15px 20px;
+  background-color: #9b762c;
+  letter-spacing: 0.7px;
+  color: #e0dcdc;
+  text-align: center;
+}
 
 
 @media screen and (min-width:1024px) {

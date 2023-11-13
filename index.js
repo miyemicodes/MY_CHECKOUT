@@ -7,6 +7,14 @@ const postCode =document.querySelector("#postCode");
 const country =document.querySelector("#country");
 const email =document.querySelector("#email");
 const formBtn =document.querySelector("button");
+const form = document.querySelector(".form");
+
+
+const para = document.createElement("p");
+para.innerText = "Order Completed";
+form.appendChild(para);
+para.style.display = "none";
+//console.log(para.style.display = "none");
 
 formBtn.addEventListener("click",async e =>{
 
@@ -38,9 +46,12 @@ formBtn.addEventListener("click",async e =>{
       const response = await postData.json();
       console.log("response",response);
       formBtn.innerHTML = "Order Successful"
+      para.style.display = "block";
+
       setTimeout(()=>{
         formBtn.innerHTML = "Continue to payment"
         formBtn.disabled = false;
+        para.style.display = "none";
       },3000);
       
   }catch(error){
